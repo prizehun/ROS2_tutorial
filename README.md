@@ -18,5 +18,5 @@ open other terminal
 ```
 ros2 topic pub --once /rad_vel_dir rvd_action_interfaces/msg/RVD "{radius: 4.0, velocity: 10.0, direction: True}"
 ```
-if direction is true(1) then turtle moves in counter clockwise direction
+if direction is true(1) then turtle moves in counter clockwise direction.
 else moves in clockwise direction
