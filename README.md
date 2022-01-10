@@ -29,7 +29,8 @@ if direction is true(1) then turtle moves in counter clockwise direction.
 else moves in clockwise direction
 
 # ROS_example_1
-ROS2 dwa ai moving turtle
+ROS2 dwa ai moving turtle that pass waypoints and avoid obstacle
+
 ![rosgraph](https://user-images.githubusercontent.com/67641480/148827705-185c165c-8ff6-4571-b1fb-a79457712dd5.png)
 
 
