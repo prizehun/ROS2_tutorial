@@ -27,3 +27,6 @@ ros2 topic pub --once /rad_vel_dir rvd_action_interfaces/msg/RVD "{radius: 4.0, 
 ```
 if direction is true(1) then turtle moves in counter clockwise direction.
 else moves in clockwise direction
+
+# ROS_example_1
+ROS2 dwa ai moving turtle
