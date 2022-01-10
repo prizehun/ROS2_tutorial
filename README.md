@@ -52,4 +52,4 @@ If you want, you can use launch file to run & spawn turtle
 ![dwa_turtle](https://user-images.githubusercontent.com/67641480/148827836-069a1304-5c24-4f37-b05a-34cc43d75743.png)
 
 ## Reference
-Dynamic window approach(https://github.com/AtsushiSakai/PythonRobotics/blob/master/PathPlanning/DynamicWindowApproach/dynamic_window_approach.py)
+[Dynamic window approach](https://github.com/AtsushiSakai/PythonRobotics/blob/master/PathPlanning/DynamicWindowApproach/dynamic_window_approach.py)
