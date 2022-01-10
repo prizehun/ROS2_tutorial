@@ -5,7 +5,7 @@ ROS2 cicular moving turtle
 ```
 cd ~/turtle_ws/src
 ros2 pkg create rvd_action_interfaces --build-type ament_cmake
-ros2 pkg create moving_turtle --build-type ament_python dependencies rclpy std_msgs
+ros2 pkg create moving_turtle --build-type ament_python
 ```
 
 ## Build
