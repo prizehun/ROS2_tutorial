@@ -30,3 +30,19 @@ else moves in clockwise direction
 
 # ROS_example_1
 ROS2 dwa ai moving turtle
+
+## Package Create
+```
+cd ~/aiturtle_ws/src
+ros2 pkg create dwa_aiturtle --build-type ament_python
+```
+## Run turtlesim & spawn new turtle
+```
+ros2 run turtlesim turtlesim_node
+```
+open new terminal
+```
+ros2 service call /spawn turtlesim/srv/Spawn "{x: 1.0, y: 1.0, theta: 0.0, name: 'turtle2'}"
+ros2 run dwa_aiturtle dwaplanner
+```
+If you want, you can use launch file to run & spawn turtle
