@@ -48,3 +48,8 @@ ros2 service call /spawn turtlesim/srv/Spawn "{x: 1.0, y: 1.0, theta: 0.0, name:
 ros2 run dwa_aiturtle dwaplanner
 ```
 If you want, you can use launch file to run & spawn turtle
+## Result
+![dwa_turtle](https://user-images.githubusercontent.com/67641480/148827836-069a1304-5c24-4f37-b05a-34cc43d75743.png)
+
+## Reference
+Dynamic window approach(https://github.com/AtsushiSakai/PythonRobotics/blob/master/PathPlanning/DynamicWindowApproach/dynamic_window_approach.py)
