@@ -1,6 +1,13 @@
 # ROS_tutorial
 ROS2 cicular moving turtle
 
+## Package Create
+```
+cd ~/turtle_ws/src
+ros2 pkg create rvd_action_interfaces --build-type ament_cmake
+ros2 pkg create moving_turtle --build-type ament_python dependencies rclpy std_msgs
+```
+
 ## Build
 in your work space
 ```
