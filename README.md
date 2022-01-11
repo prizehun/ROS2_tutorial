@@ -39,7 +39,7 @@ else moves in clockwise direction
 ROS2 dwa ai moving turtle that passes waypoints and avoids obstacle    
 ## Object
 로봇(turtle2)의 위치를 topic을 통해 파악하고, static 장애물(turtle1)을 피해 waypoint를 순환하도록 /turtle2/cmd_vel 을 Output으로 보내는 dwa local planner 패키지 작성. 필요하다면 파라미터를 조정할 것
-##rqt_graph
+## rqt_graph
 ![rosgraph](https://user-images.githubusercontent.com/67641480/148827705-185c165c-8ff6-4571-b1fb-a79457712dd5.png)
 
 
