@@ -37,8 +37,9 @@ else moves in clockwise direction
 
 # ROS_example_1
 ROS2 dwa ai moving turtle that passes waypoints and avoids obstacle    
-Object:로봇(turtle2)의 위치를 topic을 통해 파악하고, static 장애물(turtle1)을 피해 waypoint를 순환하도록 /turtle2/cmd_vel 을 Output으로 보내는 dwa local planner 패키지 작성. 필요하다면 파라미터를 조정할 것
-
+## Object
+로봇(turtle2)의 위치를 topic을 통해 파악하고, static 장애물(turtle1)을 피해 waypoint를 순환하도록 /turtle2/cmd_vel 을 Output으로 보내는 dwa local planner 패키지 작성. 필요하다면 파라미터를 조정할 것
+##rqt_graph
 ![rosgraph](https://user-images.githubusercontent.com/67641480/148827705-185c165c-8ff6-4571-b1fb-a79457712dd5.png)
 
 
@@ -46,6 +47,13 @@ Object:로봇(turtle2)의 위치를 topic을 통해 파악하고, static 장애�
 ```
 cd ~/aiturtle_ws/src
 ros2 pkg create dwa_aiturtle --build-type ament_python
+```
+## Build
+in your work space
+```
+cd ~/aiturtle_ws
+colcon build --symlink-install --packages-select dwa_aiturtle
+. ~/aiturtle_ws/install/local_setup.bash
 ```
 ## Run turtlesim & spawn new turtle
 ```
@@ -65,3 +73,12 @@ If you want, you can use launch file to run & spawn turtle
 
 # ROS_example_2
 advanced example_1, two turtles pass waypoints and avoid each other
+## rqt_graph
+![rosgraph1](https://user-images.githubusercontent.com/67641480/149022946-50288f18-1630-41b2-8286-e71281ad533c.png)
+## Run
+package create, build as same as example1 but you should add numbering '2' like aiturtle2, dwa_aiturtle2 and launch
+```
+ros2 launch dwa_aiturtle2 aitrutle.launch.py
+## Result
+![스크린샷, 2022-01-12 05-14-36](https://user-images.githubusercontent.com/67641480/149023718-0c429f2a-feaa-437c-8144-66fdd22e2fbc.png)
+the pathway will change as you modify the parameters
