@@ -79,6 +79,7 @@ advanced example_1, two turtles pass waypoints and avoid each other
 package create, build as same as example1 but you should add numbering '2' like aiturtle2, dwa_aiturtle2 and launch
 ```
 ros2 launch dwa_aiturtle2 aitrutle.launch.py
+```
 ## Result
 ![스크린샷, 2022-01-12 05-14-36](https://user-images.githubusercontent.com/67641480/149023718-0c429f2a-feaa-437c-8144-66fdd22e2fbc.png)
-the pathway will change as you modify the parameters
+The pathway will change as you modify the parameters
