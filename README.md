@@ -1,6 +1,13 @@
 # ROS_tutorial
 ROS2 cicular moving turtle
 
+## Object
+Turtlesim에서 아래 조건을 만족하면서 입력 명령을 받아 거북이를 등속 원운동하게하는 ROS2 패키지를 설계하시오. 
+1. 원운동의 회전반경(radius), linear velocity(velocity), 회전방향(direction) 값을 포함하는 ROS 메세지 타입을 정의하고 이 토픽 메세지를 받아 Turtlesim에 속도명령(cmd_vel)을 주는 프로그램을 설계한다. 
+2. ros2 launch로 turtlesim과 설계한 프로그램을 동시에 실행할 수 있는 launch 파일을 제작한다. 
+3. turtlesim 실행 후, ros2 topic pub으로 새롭게 정의한 메시지 타입을 publish하여 등속 원운동을 명령한다. 
+4. C++ / Python등의 언어는 자유롭게 선택하여 진행한다.
+
 ## Package Create
 ```
 cd ~/turtle_ws/src
@@ -29,7 +36,8 @@ if direction is true(1) then turtle moves in counter clockwise direction.
 else moves in clockwise direction
 
 # ROS_example_1
-ROS2 dwa ai moving turtle that pass waypoints and avoid obstacle
+ROS2 dwa ai moving turtle that passes waypoints and avoids obstacle    
+Object:로봇(turtle2)의 위치를 topic을 통해 파악하고, static 장애물(turtle1)을 피해 waypoint를 순환하도록 /turtle2/cmd_vel 을 Output으로 보내는 dwa local planner 패키지 작성. 필요하다면 파라미터를 조정할 것
 
 ![rosgraph](https://user-images.githubusercontent.com/67641480/148827705-185c165c-8ff6-4571-b1fb-a79457712dd5.png)
 
@@ -54,3 +62,6 @@ If you want, you can use launch file to run & spawn turtle
 
 ## Reference
 [Dynamic window approach](https://github.com/AtsushiSakai/PythonRobotics/blob/master/PathPlanning/DynamicWindowApproach/dynamic_window_approach.py)
+
+# ROS_example_2
+advanced example_1, two turtles pass waypoints and avoid each other
